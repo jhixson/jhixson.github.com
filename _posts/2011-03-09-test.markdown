@@ -1,0 +1,17 @@
+---
+layout: post
+title: test post
+category: general
+---
+
+this is a **test** post with `code`
+
+		more code here
+		next line of code
+
+a list
+* item
+* item2
+* other item
+
+posting a [link here](http://www.google.com)

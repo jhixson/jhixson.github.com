@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<title>
+{% if page.title %}
+{{ page.title }} | 
+{% endif %}
+nerdcore
+</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="stylesheet" media="all" href="{{ site.url }}/css/reset.css" type="text/css" />
+	<link rel="stylesheet" media="all" href="{{ site.url }}/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
+
+	<!--[if IE]>
+	<link rel="stylesheet" href="{{ site.url }}/css/win-ie-all.css">
+	<![endif]--> 
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="{{ site.url }}/css/win-ie7.css">
+	<![endif]--> 
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" href="{{ site.url }}/css/win-ie-old.css">
+	<![endif]-->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shiv.org.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<section id="wrapper" class="clear">
+<div class="top_border"></div>
+
+<header id="header">
+	<aside class="ribbon">
+		<img src="{{ site.url }}/images/banner_tag.png" alt="nerdcore: An Internet Identity Crisis, Since 2001" class="tag" />
+		<div class="bottom"></div>
+	</aside>
+	<h1><a href="#">nerdcore</a></h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#" class="active">Blog</a></li>
+			<li><a href="#">Archive</a></li>
+			<li><a href="#">PhotoLog</a></li>
+			<li><a href="#">Forum</a></li>
+		</ul>
+	</nav>
+	<div id="searchbox">
+		<input type="text" name="s" value="Search..." /><a href="#" id="search_go">Search</a>
+	</div>
+	<!--
+	<div class="social clear">
+		<a href="#" class="left">&laquo;</a>
+		<a href="#" class="right">&raquo;</a>
+	</div>
+	-->
+	<div class="overflow">
+		<ul class="links">
+		</ul>
+	</div>
+	<div class="cite">via <a href="http://www.reddit.com/">reddit.com</a></div>
+</header>
+
+	{{ content }}
+
+</section>
+<footer id="footer">
+	<p>hi</p>
+</footer>
+
+<script type="text/javascript" src="{{ site.url }}/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/js/jquery-ui-1.8.4.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/js/functions.js"></script>
+
+</body>
+</html>
+

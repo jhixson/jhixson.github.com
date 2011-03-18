@@ -1,0 +1,3 @@
+auto: true
+server: false
+site.url: http://localhost:4000

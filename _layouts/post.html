@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section id="content">
+	<article id="{{ page.id }} class="article">
+		<a href="#" class="comment_box"><span class="comment_count">&nbsp;</span></a>
+		<time datetime="{{ page.date }}" class="datebox clear">
+			<span class="year">{{ page.date | date: '%Y' }}</span>
+			<span class="month">{{ page.date | date: '%b' }}</span>
+			<span class="day">{{ page.date | date: '%d' }}</span>
+		</time>
+		<h2><a href="{{ page.url }}" rel="bookmark">{{ page.title }}</a></h2>
+		<aside class="tags">Posted in: </aside>
+		{{ content }}
+	</article>
+	
+</section>
