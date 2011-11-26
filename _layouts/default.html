@@ -36,11 +36,10 @@ nerdcore
 	<h1><a href="#">nerdcore</a></h1>
 	<nav class="nav">
 		<ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#" class="active">Blog</a></li>
-			<li><a href="#">Archive</a></li>
-			<li><a href="#">PhotoLog</a></li>
-			<li><a href="#">Forum</a></li>
+			<li><a href="#" class="{{ page.active.about }}">About</a></li>
+			<li><a href="#" class="{{ page.active.blog }}">Blog</a></li>
+			<li><a href="#" class="{{ page.active.archive }}">Archive</a></li>
+			<li><a href="#" class="{{ page.active.photolog }}">PhotoLog</a></li>
 		</ul>
 	</nav>
 	<div id="searchbox">

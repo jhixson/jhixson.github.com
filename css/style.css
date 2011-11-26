@@ -40,6 +40,40 @@ li {
 	line-height: 150%;
 }
 
+#slider {
+	width: 306px;
+	height: 306px;
+	overflow: hidden;
+}
+
+#slider ul, #strip ul {
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+}
+
+#slider li, #strip li {
+	float: left;
+}
+
+#strip {
+
+	width: 300px;
+
+	margin: 0 auto;
+	clear: both;
+}
+
+#strip li {
+	margin: 2px 3px;
+	cursor: pointer;
+}
+
+#strip li.active {
+	border: 2px solid red;
+	margin: 0 1px;
+}
+
 .left {
 	float: left;
 	margin: 0 5px 5px 0;
@@ -473,19 +507,20 @@ li {
 }
 
 .photobox_holder {
-	width: 384px;
+	width: 390px;
 	margin: 0 auto;
 }
 
 .photobox {
-	border: 10px solid #ccc;
 	float: left;
 	position: relative;
+	margin: 25px 10px 10px 10px;
 }
 
 .photobox img {
 	vertical-align: middle;
-	width: 300px;
+	width: 306px;
+	
 }
 
 .left_shadow {
@@ -495,6 +530,7 @@ li {
 	left: 0;
 	width: 12px;
 	background: transparent url('../images/leftshadow.png') repeat-y;
+	z-index: 2;
 }
 
 .right_shadow {
@@ -504,6 +540,7 @@ li {
 	right: 0;
 	width: 12px;
 	background: transparent url('../images/rightshadow.png') repeat-y;
+	z-index: 2;
 }
 
 .left_arrow, .right_arrow {
@@ -513,6 +550,8 @@ li {
 	height: 47px;
 	background: transparent url('../images/trans_arrow_left.png') no-repeat;
 	text-indent: -9000px;
+	margin-top: 120px;
+	outline: none;
 }
 
 .right_arrow {
